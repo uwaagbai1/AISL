@@ -1,0 +1,123 @@
+{% extends "main/base_generic.html" %}
+{% block content %}
+{% load static %}
+
+  <div class="container-fluid bg-primary mb-5">
+    <div
+      class="d-flex flex-column align-items-center justify-content-center"
+      style="min-height: 400px"
+    >
+      <h3 class="display-3 font-weight-bold text-white">News Detail</h3>
+      <div class="d-inline-flex text-white">
+        <p class="m-0"><a class="text-white" href="{% url 'index' %}">Home</a></p>
+        <p class="m-0 px-2">/</p>
+        <p class="m-0">News Detail</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row pt-5">
+      <div class="col-lg-8">
+        <div class="d-flex flex-column text-left mb-3">
+          <p class="section-title pr-5">
+            <span class="pr-2">News Detail Page</span>
+          </p>
+          <h1 class="mb-3">{{ news.title }}</h1>
+          <div class="d-flex">
+            <p class="mr-3"><i class="fa fa-user text-primary"></i> School Admin</p>
+            <p class="mr-3">
+              <i class="fa fa-folder text-primary"></i> {{ news.category }}
+            </p>
+            <p class="mr-3"><i class="fa fa-clock text-primary"></i> {{ news.mins_read }}</p>
+          </div>
+        </div>
+        <div class="mb-5">
+          <p>
+            {{ news.content|safe }}
+          </p>
+        </div>
+
+        <div class="mb-5 mx-n3">
+          {% if related_news %}
+          <h2 class="mb-4 ml-3">Related News</h2>
+          {% else %}
+          <h2 class="mb-4 ml-3">No Related News for this Article</h2>
+          {% endif %}
+          <div class="owl-carousel post-carousel position-relative">
+            
+            {% for item in related_news|slice:'3' %}
+            <div
+              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3"
+            >
+              <img
+                class="img-fluid"
+                src="{{ item.ImageURL }}"
+                style="width: 80px; height: 80px"
+              />
+              <div class="pl-3">
+                <h5 class="">{{ item.title }}</h5>
+                <div class="d-flex">
+                  <small class="mr-3"
+                    ><i class="fa fa-user text-primary"></i> School Admin</small
+                  >
+                  <small class="mr-3"
+                    ><i class="fa fa-folder text-primary"></i> {{ item.category }}</small
+                  >
+                  <small class="mr-3"
+                    ><i class="fa fa-clock text-primary"></i> {{ item.mins_read }} mins read</small
+                  >
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+
+                  
+      </div>
+
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        
+        <div class="mb-5">
+          <form action="">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Keyword"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text bg-transparent text-primary"
+                  ><i class="fa fa-search"></i
+                ></span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="mb-4">Categories</h2>
+          <ul class="list-group list-group-flush">
+            {% for item in categories %}
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center px-0"
+            >
+              <a href="">{{ item.name }}</a>
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+
+        <div class="mb-5">
+          <img src="img/blog-2.jpg" alt="" class="img-fluid rounded" />
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

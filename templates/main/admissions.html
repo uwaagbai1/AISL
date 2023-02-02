@@ -1,0 +1,117 @@
+{% extends "main/base_generic.html" %}
+{% block content %}
+{% load static %}
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary mb-5">
+    <div
+      class="d-flex flex-column align-items-center justify-content-center"
+      style="min-height: 400px"
+    >
+      <h3 class="display-3 font-weight-bold text-white">Admissions</h3>
+      <div class="d-inline-flex text-white">
+        <p class="m-0"><a class="text-white" href="{% url 'index' %}">Home</a></p>
+        <p class="m-0 px-2">/</p>
+        <p class="m-0">Admissions</p>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  
+  <div class="container-fluid pt-5">
+    <div class="container">
+      
+      <div class="row">
+        <h2 class="mb-4">ADMISSION ELIGIBILITY </h2>      
+        <p>
+            Students may be enrolled at the AIS-L upon completing the requirements for enrolment and receiving approval from the director.
+            At the time of registration, the following original documents should be presented:
+            <ul class="list-inline m-0">
+                <li class="py-2">
+                    <i class="fa fa-check text-success mr-3"></i>
+                    All previous school records
+                </li>
+                <li class="py-2">
+                    <i class="fa fa-check text-success mr-3"></i>
+                    Original birth certificate or passport
+                </li>
+                
+                <li class="py-2">
+                  <i class="fa fa-check text-success mr-3"></i>
+                  Any relevant medical records including vaccinations. The following vaccinations must be up to date:
+                  <ul style="list-style: none;">
+                    <li class="py-2">
+                        <i class="fa fa-check text-success mr-3"></i>
+                        Yellow Fever
+                    </li>
+                    <li class="py-2">
+                        <i class="fa fa-check text-success mr-3"></i>
+                        Mumps, Measles, Rubella (MMR)
+                    </li>
+                    <li class="py-2">
+                        <i class="fa fa-check text-success mr-3"></i>
+                        Typhoid
+                    </li>
+                    <li class="py-2">
+                        <i class="fa fa-check text-success mr-3"></i>
+                        Hepatitis B
+                    </li>
+                    <li class="py-2">
+                        <i class="fa fa-check text-success mr-3"></i>
+                        Meningitis
+                    </li>
+                    <li class="py-2">
+                        <i class="fa fa-check text-success mr-3"></i>
+                        DPT
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="py-2">
+                    <i class="fa fa-check text-success mr-3"></i>
+                    Two recent passport photos
+                </li>
+                <li class="py-2">
+                    <i class="fa fa-check text-success mr-3"></i>
+                    Copy of Carte de sojourn for non-Togolese
+                </li>
+            </ul>
+            <br><br>
+            The school does not have services for students with special needs and reserves the right to deny admission to students with special needs. 
+            <br><br>
+            Originals of any documents submitted will be photocopied and returned to the student (or family). 
+            Students entering nursery school must be one and one half years of age. Kindergarten students must be age five by September 30th of the year in which they enroll. 
+            In some cases, exceptions are possible with the director’s approval for students who turn five by Dec. 31.
+            <br><br>
+            Students entering Grades 10 and above must provide school reports in English or translations (to English) by an accredited translator of all previous school records, starting with Grade 9. 
+            These will be kept in the students’ files along with the copies of those in the original language. 
+            We need these documents for evaluation and credits and to help with college applications. 
+            <br><br>
+            All students entering Middle or High School must take a level placement test in Math. 
+            An English language skills level test is also required for those entering grades 6-10 whose English language skills are low. 
+            <br><br>
+            The test will be given at the beginning and end of the year and towards the end of Semester 1.    
+            <br><br>
+            NOTE:Students entering AIS-L in grades 10 and above must meet a satisfactory standard to complete and receive a high school diploma. Generally speaking, any transferring high school student will need to spend a minimum of two years at AIS-L in order to meet all requirements for graduation.
+        </p>
+      </div>
+      
+      <div class="row">
+        <h2 class="mb-4">PAYMENT OF FEES</h2>      
+        <p>
+            <strong>Tuition fees are due and payable at the time of registration. </strong>
+            Payment may be on an annual, semester, or quarterly basis: the first payment is due prior to attendance, whichever financial plan is chosen. 
+            <strong>All parents must sign a Tuition Agreement.</strong>
+            <br><br>
+            All fees will be paid after the second week of classes.  
+            <strong>Students will not continue classes until all fees are paid in full.</strong>
+        </p>
+        
+      </div>
+      
+      
+    </div>
+  </div>
+
+{% endblock content %}

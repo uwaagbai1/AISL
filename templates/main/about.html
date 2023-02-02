@@ -1,0 +1,546 @@
+{% extends "main/base_generic.html" %}
+{% block content %}
+{% load static %}
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary mb-5">
+    <div
+      class="d-flex flex-column align-items-center justify-content-center"
+      style="min-height: 400px"
+    >
+      <h3 class="display-3 font-weight-bold text-white">About Us</h3>
+      <div class="d-inline-flex text-white">
+        <p class="m-0"><a class="text-white" href="{% url 'index' %}">Home</a></p>
+        <p class="m-0 px-2">/</p>
+        <p class="m-0">About Us</p>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <img
+            class="img-fluid rounded mb-5 mb-lg-0"
+            src="{% static 'img/about-1.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-7">
+          <p class="section-title pr-5">
+            <span class="pr-2">Learn About Us</span>
+          </p>
+          <h1 class="mb-4">Best School For Your Kids</h1>
+          <p>
+            AIS-L is committed to providing a American standard of education. The curriculum is that of an U.S. academic preparatory and high school. The school attempts to provide the most up-to-date American methods of teaching and to maintain small classes where maximum interaction among pupils and between teachers and pupils creates an enthusiastic and friendly climate for academic achievement. Students are encouraged to use multiple resources and techniques in order to master skills and acquire new knowledge. Although memorization is sometimes necessary and useful, in most cases we help children to learn by inquiry, reflection, experiment, and discovery. Homework is given at all levels (except Nursery and Pre-K), but in amounts appropriate to grade. We try to be attentive to the special needs of each pupil and make a sincere effort to provide remediation and enrichment when needed and to the best of our ability.
+          </p>
+          <div class="row pt-2 pb-4">
+            <div class="col-6 col-md-4">
+              <img class="img-fluid rounded" src="{% static 'img/about-2.jpg' %}" alt="" />
+            </div>
+            <div class="col-6 col-md-8">
+              <ul class="list-inline m-0">
+                <li class="py-2 border-top border-bottom">
+                  <i class="fa fa-check text-primary mr-3"></i>Quality Education
+                </li>
+                <li class="py-2 border-bottom">
+                  <i class="fa fa-check text-primary mr-3"></i>Trained and Qualified Staffs
+                </li>
+                <li class="py-2 border-bottom">
+                  <i class="fa fa-check text-primary mr-3"></i>Safe and orderly environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Facilities Start -->
+  <div class="container-fluid pt-5">
+    <div class="container pb-3">
+      <div class="text-center pb-2">
+        <p class="section-title px-5">
+          <span class="px-2">Our Facilities</span>
+        </p>
+        <h1 class="mb-4">Facilities</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 pb-1">
+          <div
+            class="d-flex bg-light shadow-sm border-top rounded mb-4"
+            style="padding: 30px"
+          >
+          <h1><i
+            class="fa fa-laptop text-primary mb-3"
+          ></i></h1>
+            <div class="pl-4">
+              <h4>Computer Lab</h4>
+              <p class="m-0">
+                Our computer lab facility helps students to integrate information technology into the present curricula.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+          <div
+            class="d-flex bg-light shadow-sm border-top rounded mb-4"
+            style="padding: 30px"
+          >
+            <h1><i
+              class="flaticon-035-table text-primary mb-3"
+            ></i></h1>
+            <div class="pl-4">
+              <h4>Library</h4>
+              <p class="m-0">
+                We provide a space for personal growth, enjoyable extracurricular activities and a place of learning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+          <div
+            class="d-flex bg-light shadow-sm border-top rounded mb-4"
+            style="padding: 30px"
+          >
+            <h1><i
+              class="flaticon-030-crayons text-primary mb-3"
+            ></i></h1>
+            <div class="pl-4">
+              <h4>Art Room</h4>
+              <p class="m-0">
+                We have displays of art exemplars, learning aides, and their unique collections of objects, mannequins and so on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+          <div
+            class="d-flex bg-light shadow-sm border-top rounded mb-4"
+            style="padding: 30px"
+          >
+            <h1><i
+              class="fa fa-drum text-primary mb-3"
+            ></i></h1>
+            <div class="pl-4">
+              <h4>Music Room</h4>
+              <p class="m-0">
+                Our Music Room offers a very student centred approach to music tuition and excellent facilities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+          <div
+            class="d-flex bg-light shadow-sm border-top rounded mb-4"
+            style="padding: 30px"
+          >
+          <h1><i
+            class="fa fa-capsules text-primary mb-3"
+          ></i></h1>
+            <div class="pl-4">
+              <h4>Science Lab</h4>
+              <p class="m-0">
+                Students are made to use the models and understand different scientific theories and concepts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+          <div
+            class="d-flex bg-light shadow-sm border-top rounded mb-4"
+            style="padding: 30px"
+          >
+            <h1><i
+              class="flaticon-018-ball text-primary mb-3"
+            ></i></h1>
+            <div class="pl-4">
+              <h4>Sports</h4>
+              <p class="m-0">
+                We also have a terrace, a covered playground, basketball court and soccer field for all ages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Facilities Start -->
+  
+  <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="text-center pb-2">
+        
+        <h1 class="mb-4">More About Us</h1>
+      </div>
+      
+      <div class="row">
+        <h2 class="mb-4">MISSION STATEMENT</h2>      
+        <p>
+          The American International School of Lomé (AIS-L) is distinguished for academic excellence and committed to cultivating a student’s intellect and character from nursery to graduation in a multi-cultural family environment where individual potential, global perspective and preparation for life-long learning are developed through a flexible academic programme.    
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">PHILOSOPHY</h2>      
+        <p>
+          AIS-L believes in the worth and dignity of all who enter our doors. 
+          Our students are treated with respect and as individuals. 
+          We consider the development of character to be on par with that of intellect and to fall within our role as educators. 
+          Personal integrity, care and compassion for others, understanding and respect for difference are promoted in our classes as well as in all our activities. 
+          Our goal is to assist each student to develop self-discipline and to learn to accept responsibility for his/her own actions.  
+          <br><br>
+          In 2016 we added the Profile of the Graduate to our Foundation Documents. 
+          This was also a collaborative effort: it was created with input from all the teachers and reviewed by Grade 12 students. 
+          It was then approved formally by the Planning Committee which is made up of Teacher, Parent, Staff, Student and Board representatives. 
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">PROFILE OF GRADUATE</h2>      
+        <p>
+          By the end of the programme, it is expected that a graduate has completed the requirements for the AISL diploma and   
+        </p>
+        <ul class="list-inline m-0">
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            is proficient in the English language
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            has a positive attitude
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            is an independent, critical and creative thinker
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            can speak in public
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            is competent in the use of technology
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            is prepared for college or university level work
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            can make healthy life style choices
+          </li>
+          <li class="py-2">
+            <i class="fa fa-check text-success mr-3"></i>
+            is prepared to make the world a better place
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">GENERAL INFORMATION</h2>      
+        <p>
+          <em>Curriculum/Instruction</em>
+          AIS-L is committed to providing a American standard of education. 
+          The curriculum is that of an U.S. academic preparatory and high school. 
+          The school attempts to provide the most up-to-date American methods of teaching and to maintain small classes where maximum interaction among pupils and between teachers and pupils creates an enthusiastic and friendly climate for academic achievement. 
+          Students are encouraged to use multiple resources and techniques in order to master skills and acquire new knowledge. 
+          Although memorization is sometimes necessary and useful, in most cases we help children to learn by inquiry, reflection, experiment, and discovery. 
+          Homework is given at all levels (except Nursery and Pre-K), but in amounts appropriate to grade. We try to be attentive to the special needs of each pupil and make a sincere effort to provide remediation and enrichment when needed and to the best of our ability.
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">ACCREDITATION </h2>      
+        <p>
+          AIS-L is fully accredited from Pre-K through Grade 12 by the Middle States Association of Colleges and Schools. 
+          Our accreditation status was renewed in December 2016 after and extensive self-study process and the visit by a team of outside educators who provided validation and feedback to the school regarding its status, progress and development.   
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">STAFF</h2>      
+        <p>
+          For the present school year, we have seven fulltime teachers including Masters and PhD candidates. 
+          As a general policy, we hire teachers who hold both a degree and professional teaching qualifications from their home countries.    
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">STUDENTS</h2>      
+        <p>
+          AISL welcomes children of all nationalities. 
+          Our student body is comprised of students whose parents are expatriate residing in Togo. 
+          Recently, the school has experienced an increase number of students who reside permanently in Togo. 
+          The language of teaching is English and every opportunity is taken to help students master this language.    
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">PARENTS</h2>      
+        <p>
+          AIS-L is non-sectarian and invites families of all religious beliefs to feel comfortable. 
+          We take advantage of the representation of various faiths in our community to help the children understand values in a multi-cultural context. 
+          We believe that successful education is dependent on parent involvement and support. The school is open to parent volunteers and to their active participation in their child’s education is encouraged. 
+          We also encourage a Parent Teacher Organization to help with fund raising and other community-oriented projects. 
+          The PTO is open to all parents. Parents are always welcome to make an appointment to visit with a class teacher or administrator.  
+          We ask that you do not show up unannounced during the school day expect for emergencies.  
+          <br><br>
+          We will allow for the adjustment time parents need with the younger children but by the end of the first week, parents should no longer be visiting the classroom.  
+          Teachers will keep you well informed of both social and academic progress.   
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">OPERATION</h2>      
+        <p>
+          A three-member team is responsible for the school’s daily operation. 
+          This highly energetic administration comprises the director who is the executive and assisted by a Business Manager and an Office Manager.  
+          The administration is responsible for financial oversight and general management and development of the school.    
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">YEARLY SCHEDULE</h2>      
+        <p>
+          The school year operates from late August until mid-June for a minimum of 180 days for students and a maximum of 190 days for teachers. 
+          It is divided into four quarters with a holiday for the Winter Break and another holiday for Spring Break. 
+          The school observes a balance of Togolese and American holidays. See attached calendar for school holidays. 
+          Students are expected to be present for at least 85% of the school year to qualify for promotion to the next grade. 
+          High School students must be present for at least 85% of each semester class in order to receive credit.   
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">LATENESS/TARDY</h2>      
+        <p>
+          Students should be in their respective classrooms by 8:00 am. Classes start at 8:00 am. 
+          Being on time for the start of any lesson is part of the learning process.  
+          We ask parents to please arrive in a timely manner each morning and please pick up at announced times.
+          <br><br>
+          Students must be picked up on time after school, at the end of the activity time or after sports depending on their schedule. 
+          This is very important. Those students who are not in an activity but are waiting for Sports to begin must go to Study Hall. 
+          We now have one after school supervisor. She will call parents who are late to pick up their children. 
+          School is over after your child’s last scheduled activity.            
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">SAFETY</h2>      
+        <p>
+          Fire and other safety drills are conducted quarterly. 
+          The fire extinguishers are checked twice yearly by local fire authorities. 
+          The school also has a PA system to be used in emergency situations and is in contact with nearby police stations, especially in potential crisis situations. 
+          <br><br>
+          The school employs guards to monitor the entrance and exit by students, staff, and visitors to the school campus. 
+          Students may not leave the campus before the official end of school without written permission from the office. 
+          All adults - both employees and visitors - sign in and out each time they enter and leave the campus in a visitor/staff log book. 
+          Visitors are issued visitor badges which must be returned to the guards at departure. 
+          Students are signed in and out by the guards upon arrival and departure. 
+          The daily student attendance list is brought to the office each morning. 
+          Lower School students are not allowed to leave with people other than their parents or designated driver without a written note to the office from the parent. 
+          <br><br>
+          In general, the after school supervisor does not leave campus until the last child has been picked up. Occasionally, if a parent/driver is very late in picking a child up, the child may be left under the supervision of the guards while waiting for their parents/driver. 
+          In this case the after school supervisor leaves a written note informing the administration to that effect.
+          <br><br>
+          The school may rent buses for school sponsored field trips. 
+          The school does not rent buses which do not carry insurance. 
+          Students are not allowed on the bus without written permission from their parents, except for swimming in which case the signing up of the child for this activity in tacit permission to ride the school rented bus to the swimming pool and back. 
+          If the school organizes trips using other transportation, such as parent vehicles or taxes, students under 18 are also not permitted to use these vehicles without the written permission of their parent. 
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">HEALTH</h2>      
+        <p>
+          The school asks parents not to send their children to school when they are sick. 
+          If a child becomes sick or injured during the school day, the school nurse will call the parents to come and pick up the child. 
+          If a small incident/accident occurs on the playground or on the school grounds during the school day which warrants notice, an accident report will be filled out by the teacher on duty or the nurse, and the parents will be informed. 
+          <br><br>
+          Medication that needs to be taken during the school day should be given to the school nurse. 
+          The school nurse is the only one who, following the parents' instructions, can give medications to students. 
+          She has a cupboard and a small refrigerator for the safe storage of medications. She also has a first aid box in case of need. 
+          All consultations, including informal visits to the school nurse as well as administration of medicine are recorded in a daily log by the school nurse. 
+          The school nurse also attends all sports events, both on the school campus and away. In the event of large sporting activities, the local scouts or other health practitioners may also be asked to lend assistance. 
+          <br><br>
+          The school has working relations with certain clinics, doctors, dentists, and pharmacies. For specific details, please ask the school office. However, all parents are asked to inform us of the name of their consulting physician upon time of registration and to keep this information up to date each year. In an emergency, and in the absence of this information or if both the family doctor and parent are unavailable for immediate consultation, the school reserves the right to take the child to consult the school designated doctor, clinic, or pharmacy. The school will always call the parents and/or family doctor first before choosing this option if the information is readily available. Both the office and the school nurse have copies of students' personal and medical files. 
+          In cases where teachers should also be made aware of a student's medical situations, the situation will be shared either orally or in written in a manner which protects the confidentiality of the student and respects the parents' wishes.
+          The school requests all students bring their own drinking water to school. The school also has safe drinking water for sale and for emergency use. 
+   
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">DISCIPLINE/STUDENTS’BEHAVIOUR</h2>      
+        <p>
+          AIS-L feels that children should in proportion to their ages be responsible for their actions and behavior in a manner appropriate to an institution that places emphasis on learning, cooperation, and mutual respect.
+          <br><br>
+          Because our student body is small, we teach discipline by means of example - that is modeling, discussion, and explanation. 
+          However, students are expected to comply with a basic list of regulations. 
+          Please refer to the following pages for school rules and the dress code. 
+          The academic honesty policy and the information resources technology policy are discussed and signed by students at school. 
+          The school rules and dress code should be read together with the parents. 
+          Please sign the enclosed signature page regarding school rules, dress code and all regulations and policies and return to the homeroom teacher immediately. 
+          <br><br>
+          AIS-L believes that students must accept the responsibility for conducting themselves in a manner that is considered acceptable by the school and the community. 
+          No one has the right to interfere with the learning of another. Emphasis is placed on respect for the rights of others. 
+          <br><br>
+          Discipline is administered according to the severity of the inappropriate behavior and ranges from talking to the student to suspension or expulsion from school.
+          <br><br>
+          We believe our task is to provide the best framework in which students can be industrious, alert, conscientious, enthusiastic, supportive of each other, respectful to everyone and successful both academically and socially. 
+          Additionally, we seek to develop students who will positively contribute to a peaceful school, community and global society.
+   
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">HIGH SCHOOL PROGRAM</h2>      
+        <p>
+          AISL is a College Preparatory School that was established in 1967 to serve families of American diplomats, Togo and neighboring countries.  
+          AISL is accredited by The Middle States Association of Colleges and Schools (MSA) to provide quality education based on a rigorous program modeled after the best educational practices and methodologies of the United States of American.
+          The school curriculum follows the American System with emphasis on inquiry, problem solving and student research.  AISL follows a seven by four-year curriculum, in which students take seven years of Math, Science, Language Arts and Social Studies. 
+          Besides these core subjects, students are also required to take Music, Art, Educational Technology and Physical Education.  
+          Additionally, students study world French for seven years, with the intention of achieving fluency, ultimately becoming bilingual. 
+          Sporting activities, Art Works, Leadership and Community Service are extra co-curricular activities also offered alongside the academic program enabling students to become articulate, confident, informed and compassionate members of the global community. 
+          AISL provides its students with opportunity to earn a HIGH SCHOOL DIPLOMA or an equivalent certificate upon graduation.   
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Team Start -->
+  <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="text-center pb-2">
+        <p class="section-title px-5">
+          <span class="px-2">Our Teachers</span>
+        </p>
+        <h1 class="mb-4">Meet Our Teachers</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div
+            class="position-relative overflow-hidden mb-4"
+            style="border-radius: 100%"
+          >
+            <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+            <div
+              class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+            >
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <h4>Julia Smith</h4>
+          <i>Music Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div
+            class="position-relative overflow-hidden mb-4"
+            style="border-radius: 100%"
+          >
+            <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+            <div
+              class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+            >
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <h4>Jhon Doe</h4>
+          <i>Language Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div
+            class="position-relative overflow-hidden mb-4"
+            style="border-radius: 100%"
+          >
+            <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+            <div
+              class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+            >
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <h4>Mollie Ross</h4>
+          <i>Dance Teacher</i>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center team mb-5">
+          <div
+            class="position-relative overflow-hidden mb-4"
+            style="border-radius: 100%"
+          >
+            <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+            <div
+              class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+            >
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center mr-2 px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light text-center px-0"
+                style="width: 38px; height: 38px"
+                href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <h4>Donald John</h4>
+          <i>Art Teacher</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team End -->
+
+{% endblock content %}
