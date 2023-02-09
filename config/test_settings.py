@@ -62,16 +62,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
-    
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rehoboth_school',
-        'USER': env("DB_USER"),
-        'PASSWORD': env("DB_PASSWORD"),
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -120,17 +116,6 @@ GOOGLE_RECAPTCHA_SITE_KEY = '6Lc3WAQkAAAAAHr91nsfl27Ctm6f7ClxPbppI033'
 GOOGLE_RECAPTCHA_SECRET_KEY = '6Lc3WAQkAAAAAAa1oGhPNVFQyRs4vBHIFHz-Uyb_'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-# HTTPS settings
-SECURE_PROXY_SSL_HOSTS = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-
-# HSTS settings
-SECURE_HSTS_SECONDS = 31536000 #1 year
-SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-secondary',

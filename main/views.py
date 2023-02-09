@@ -62,7 +62,7 @@ def contact(request):
 			}
             from_email = contact_form.cleaned_data['email_address']
             message = "\n".join(body.values())
-            recipents = ['aislome@hotmail.com']
+            recipents = ['info@aislome.net']
             try:
                 send_mail(subject, message, from_email, recipents, fail_silently=False)
             except BadHeaderError:
