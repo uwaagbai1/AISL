@@ -1,4 +1,9 @@
 {% extends "main/base_generic.html" %}
+{% block title %}About Us{% endblock title %}
+{% block keywords %}about american international school lome togo{% endblock keywords %}
+{% block description %}AISL is committed to providing an American standard of education. The curriculum is that of an U.S. academic preparatory and high school. The school attempts to provide the most up-to-date American methods of teaching and to maintain small classes where maximum interaction among pupils and between teachers and pupils creates an enthusiastic and friendly climate for academic achievement. Students are encouraged to use multiple resources and techniques in order to master skills and acquire new knowledge. Although memorization is sometimes necessary and useful, in most cases we help children to learn by inquiry, reflection, experiment, and discovery. Homework is given at all levels (except Nursery and Pre-K), but in amounts appropriate to grade. We try to be attentive to the special needs of each pupil and make a sincere effort to provide remediation and enrichment when needed and to the best of our ability.{% endblock description %}
+{% block image %}https://aislome.net/static/img/logo.png{% endblock image %}
+{% block url %}{{ request.build_absolute_uri }}{% endblock url %}
 {% block content %}
 {% load static %}
 
@@ -25,7 +30,7 @@
         <div class="col-lg-5">
           <img
             class="img-fluid rounded mb-5 mb-lg-0"
-            src="{% static 'img/about-1.jpg' %}"
+            src="{% static 'img/IMG-20230201-WA0043.jpg' %}"
             alt=""
           />
         </div>
@@ -39,7 +44,7 @@
           </p>
           <div class="row pt-2 pb-4">
             <div class="col-6 col-md-4">
-              <img class="img-fluid rounded" src="{% static 'img/about-2.jpg' %}" alt="" />
+              <img class="img-fluid rounded" src="{% static 'img/IMG-20230201-WA0064.jpg' %}" alt="" />
             </div>
             <div class="col-6 col-md-8">
               <ul class="list-inline m-0">
@@ -401,7 +406,7 @@
   </div>
   
   <!-- Team Start -->
-  <div class="container-fluid pt-5">
+  <!-- <div class="container-fluid pt-5">
     <div class="container">
       <div class="text-center pb-2">
         <p class="section-title px-5">
@@ -540,7 +545,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Team End -->
 
 {% endblock content %}

@@ -5,10 +5,19 @@
     {% load static %}
 
     <meta charset="utf-8" />
-    <title>American International School of Lome</title>
+    <title>American International School of Lome | {% block title %}{% endblock title %}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Free HTML Templates" name="keywords" />
-    <meta content="Free HTML Templates" name="description" />
+    <meta name="author" content="BY REALITIES MULTIMEDIA CONCEPT">
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
+    <meta name="description" content="{% block description %}{% endblock description %}">
+
+    <meta property="og:description" content="{% block description %}{% endblock description %}"/>
+    <meta property="og:image" content="{% block image %}{% endblock image %}"/>
+    <meta property='og:title' content='American International School of Lome | {% block title %}{% endblock title %}'/>
+    <meta property='og:url' content='{% block url %}{% endblock url %}'/>
+    <meta property='og:description' content='{% block description %}{% endblock description %}'/>
+    <meta property='og:site_name' content='American International School of Lome'/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">

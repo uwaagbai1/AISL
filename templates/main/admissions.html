@@ -1,6 +1,10 @@
 {% extends "main/base_generic.html" %}
-{% block content %}
-{% load static %}
+{% block title %}Admissions{% endblock title %}
+{% block keywords %}admissions american international school lome togo{% endblock keywords %}
+{% block description %} Students may be enrolled at the AISL upon completing the requirements for enrolment and receiving approval from the director.{% endblock description %}
+{% block image %}https://aislome.net/static/img/logo.png{% endblock image %}
+{% block url %}{{ request.build_absolute_uri }}{% endblock url %}
+
 
   <!-- Header Start -->
   <div class="container-fluid bg-primary mb-5">

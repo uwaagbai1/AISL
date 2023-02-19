@@ -1,4 +1,4 @@
-import os
+"""import os
 import environ
 from pathlib import Path
 
@@ -16,6 +16,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['www.aislome.net', 'aislome.net']
 
 INSTALLED_APPS = [
+    "admin_interface",
+    "colorfield",
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -107,7 +110,8 @@ MEDIA_URL = 'media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = "SAMEORIGIN"
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 SUMMERNOTE_THEME = 'bs4'
 
@@ -139,9 +143,9 @@ MESSAGE_TAGS = {
     messages.SUCCESS: 'success',
     messages.WARNING: 'alert-warning',
     messages.ERROR: 'danger',
-}
+}"""
 
-"""import os
+import os
 import environ
 from pathlib import Path
 
@@ -155,13 +159,16 @@ environ.Env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'm)=8ny_3(evz1tgg5ja*(qdlqll#2q!rw4f%xpkf_2rq)$)f2%'
+SECRET_KEY = env("SECRET_KEY")
 
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
+    "admin_interface",
+    "colorfield",
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -248,7 +255,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = "SAMEORIGIN"
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 SUMMERNOTE_THEME = 'bs4'
 
@@ -269,4 +277,4 @@ MESSAGE_TAGS = {
     messages.SUCCESS: 'success',
     messages.WARNING: 'alert-warning',
     messages.ERROR: 'danger',
-}"""
+}

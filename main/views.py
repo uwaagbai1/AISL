@@ -7,14 +7,40 @@ from django.conf import settings
 
 from main.models import News, Gallery, Gallery_Category, News_Category
 from main.decorators import check_recaptcha
-from main.forms import ContactForm
+from main.forms import ContactForm, RegisterForm
+from django.http import JsonResponse
 
 def index(request):
 
     latest_news = News.objects.filter(status=1).order_by('-updated_on')
+
+    if request.method == "POST":
+        register_form = RegisterForm(request.POST)
+
+        if register_form.is_valid():
+            subject = "Register"
+            body = {
+            'full_name': 'Name: ' + register_form.cleaned_data['full_name'],
+            'email_address': 'Email Address: ' + register_form.cleaned_data['email_address'],
+			'class_option':'Message: ' + register_form.cleaned_data['class_option'],
+			}
+            from_email = register_form.cleaned_data['email_address']
+            message = "\n".join(body.values())
+            recipents = ['info@aislome.net']
+            try:
+                send_mail(subject, message, from_email, recipents, fail_silently=False)
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return JsonResponse({'message': 'Form sent, we will get back to you shortly!'})
+        else:
+            message = 'Message could not be sent'
+            return JsonResponse({'message': 'Not sent, please try again later!'})
+            
+    register_form = RegisterForm()
     
     context = {
-        'latest_news':latest_news 
+        'latest_news':latest_news,
+        'form':register_form
     }
 
     return render(request, "main/index.html", context)
