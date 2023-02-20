@@ -2,8 +2,12 @@
 {% block title %}Home{% endblock title %}
 {% block keywords %}homepage home american international school lome togo{% endblock keywords %}
 {% block description %}The most reliable school for quality education.  American International School of Lome as a pacesetter Institution in Lome is the best choice for your child. We bring out the best in your child and set them on the global stage to rule their world. Register with us today!{% endblock description %}
+{% block ogdescription %}The most reliable school for quality education.  American International School of Lome as a pacesetter Institution in Lome is the best choice for your child. We bring out the best in your child and set them on the global stage to rule their world. Register with us today!{% endblock ogdescription %}
+{% block ogtitle %}Home{% endblock ogtitle %}
 {% block image %}https://aislome.net/static/img/logo.png{% endblock image %}
 {% block url %}{{ request.build_absolute_uri }}{% endblock url %}
+{% block content %}
+{% load static %}
 
   <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
     <div class="row align-items-center px-3">

@@ -2,8 +2,12 @@
 {% block title %}{{ news.title }}{% endblock title %}
 {% block keywords %}{% for item in news.tags.all %}{{ item.name }}{% endfor %}{% endblock keywords %}
 {% block description %}{{ news.get_short|safe }}{% endblock description %}
+{% block ogdescription %}{{ news.get_short|safe }}{% endblock ogdescription %}
+{% block ogtitle %}{{ news.title }}{% endblock ogtitle %}
 {% block image %}https://aislome.net/static/img/logo.png{% endblock image %}
 {% block url %}{{ request.build_absolute_uri }}{% endblock url %}
+{% block content %}
+{% load static %}
 
 
   <div class="container-fluid bg-primary mb-5">

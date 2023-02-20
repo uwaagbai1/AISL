@@ -2,8 +2,12 @@
 {% block title %}Gallery{% endblock title %}
 {% block keywords %}gallery american international school lome togo{% endblock keywords %}
 {% block description %}Our Kids School Gallery{% endblock description %}
+{% block ogdescription %}Our Kids School Gallery.{% endblock ogdescription %}
+{% block ogtitle %}Gallery{% endblock ogtitle %}
 {% block image %}https://aislome.net/static/img/logo.png{% endblock image %}
 {% block url %}{{ request.build_absolute_uri }}{% endblock url %}
+{% block content %}
+{% load static %}
 
 
   <div class="container-fluid bg-primary mb-5">

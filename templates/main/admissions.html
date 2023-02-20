@@ -2,8 +2,12 @@
 {% block title %}Admissions{% endblock title %}
 {% block keywords %}admissions american international school lome togo{% endblock keywords %}
 {% block description %} Students may be enrolled at the AISL upon completing the requirements for enrolment and receiving approval from the director.{% endblock description %}
+{% block ogdescription %}Students may be enrolled at the AISL upon completing the requirements for enrolment and receiving approval from the director.{% endblock ogdescription %}
+{% block ogtitle %}Admissions{% endblock ogtitle %}
 {% block image %}https://aislome.net/static/img/logo.png{% endblock image %}
 {% block url %}{{ request.build_absolute_uri }}{% endblock url %}
+{% block content %}
+{% load static %}
 
 
   <!-- Header Start -->
